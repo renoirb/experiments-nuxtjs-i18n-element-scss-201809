@@ -1,0 +1,24 @@
+{
+  // See http://go.microsoft.com/fwlink/?LinkId=827846 to learn about workspace recommendations.
+  // Extension identifier format: ${publisher}.${name}. Example: vscode.csharp
+  // List of extensions which should be recommended for users of this workspace.
+  "recommendations": [
+    // Vuejs Extension Pack, WITHOUT Prettier (!)
+    "octref.vetur",
+    "dariofuzinato.vue-peek",
+    "mrmlnc.vscode-attrs-sorter",
+    "CoenraadS.bracket-pair-colorizer",
+    "wix.vscode-import-cost",
+    "dbaeumer.vscode-eslint",
+    "sdras.vue-vscode-snippets",
+    // More useful analysis utilities
+    "kisstkondoros.vscode-codemetrics",
+    "wallabyjs.quokka-vscode",
+    // - Create Markdown file with sample HTTP request for usable API examples from the IDE
+    "humao.rest-client",
+    // - To help make sense of things
+    "christian-kohler.path-intellisense",
+    "jasonnutter.search-node-modules",
+    "gamunu.vscode-yarn"
+  ]
+}

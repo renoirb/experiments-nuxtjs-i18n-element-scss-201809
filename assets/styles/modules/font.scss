@@ -1,0 +1,75 @@
+/**
+ * Which fonts do we support.
+ *
+ * https://google-webfonts-helper.herokuapp.com/api/fonts/poppins?download=zip&subsets=latin&variants=500,700,regular,italic,500italic,700italic
+ * https://fonts.google.com/specimen/Poppins?selection.family=Poppins:300,300i,400,400i,500,500i,700,700i
+ * https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i
+ *
+ * Because google-fonts-webpack-plugin was just doing[1] this below, anyway.
+ * We can just do only what we need.
+ *
+ * [1]: https://github.com/gabiseabra/google-fonts-webpack-plugin/blob/master/src/GoogleWebfonts.js#L8
+ */
+
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('~assets/fonts/poppins-v5-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Regular'), local('Poppins-Regular'),
+    url('~assets/fonts/poppins-v5-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('~assets/fonts/poppins-v5-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('~assets/fonts/poppins-v5-latin-regular.woff') format('woff'),
+    /* Modern Browsers */ url('~assets/fonts/poppins-v5-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('~assets/fonts/poppins-v5-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+
+/* poppins-italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  src: url('~assets/fonts/poppins-v5-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Italic'), local('Poppins-Italic'),
+    url('~assets/fonts/poppins-v5-latin-italic.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('~assets/fonts/poppins-v5-latin-italic.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('~assets/fonts/poppins-v5-latin-italic.woff') format('woff'),
+    /* Modern Browsers */ url('~assets/fonts/poppins-v5-latin-italic.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('~assets/fonts/poppins-v5-latin-italic.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+
+/* poppins-500 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('~assets/fonts/poppins-v5-latin-500.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Medium'), local('Poppins-Medium'),
+    url('~assets/fonts/poppins-v5-latin-500.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('~assets/fonts/poppins-v5-latin-500.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('~assets/fonts/poppins-v5-latin-500.woff') format('woff'),
+    /* Modern Browsers */ url('~assets/fonts/poppins-v5-latin-500.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('~assets/fonts/poppins-v5-latin-500.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+
+/* poppins-500italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  src: url('~assets/fonts/poppins-v5-latin-500italic.eot'); /* IE9 Compat Modes */
+  src: local('Poppins Medium Italic'), local('Poppins-MediumItalic'),
+    url('~assets/fonts/poppins-v5-latin-500italic.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('~assets/fonts/poppins-v5-latin-500italic.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('~assets/fonts/poppins-v5-latin-500italic.woff') format('woff'),
+    /* Modern Browsers */ url('~assets/fonts/poppins-v5-latin-500italic.ttf') format('truetype'),
+    /* Safari, Android, iOS */ url('~assets/fonts/poppins-v5-latin-500italic.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+
+html {
+  // See nuxt.config.js
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,76 @@
+{
+  "name": "@renoirb/experiments-nuxtjs-i18n-element-scss-201809",
+  "version": "1.0.0",
+  "description": "Nuxt BFF",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env DEBUG='*,-babel,-snapdragon:*,-eslint:code-path,-eslint:ignored-paths,-vue-eslint-parse' NODE_ENV=development nuxt dev",
+    "build": "cross-env DEBUG='*,-babel,-snapdragon:*,-eslint:code-path,-eslint:ignored-paths,-vue-eslint-parse' NODE_ENV=production nuxt build",
+    "start": "cross-env NUXT_HOST='0.0.0.0' DEBUG='*,-babel,-snapdragon:*,-eslint:code-path,-eslint:ignored-paths,-vue-eslint-parse' NODE_ENV=production nuxt start",
+    "lint": "cross-env eslint --fix --ext .js,.vue --ignore-pattern '!.eslintrc.js' --ignore-path .gitignore .",
+    "lint:fix": "cross-env prettier-eslint --eslint-ignore --write '**/*.+(js|md|vue)'",
+    "lint:config-check": "cross-env eslint --print-config .eslintrc.js | eslint-config-prettier-check",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
+    "@nuxtjs/axios": "^5.1.0",
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.4.7",
+    "nuxt": "^2.0.0",
+    "vue-clipboards": "^1.2.4",
+    "vue-i18n": "^8.1.0",
+    "vue-i18n-extensions": "^0.2.0",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/babel-preset-app": "^0.7.0",
+    "babel-eslint": "^10.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "next",
+    "husky": "^1.1.0",
+    "lint-staged": "^7.0.2",
+    "node-sass": "^4.9.0",
+    "normalize.css": "^8.0",
+    "prettier": "^1.14.3",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1",
+    "sass-loader": "^7.0.1",
+    "vue": "^2.5.17",
+    "vue-ionicons": "^2.2.1",
+    "vuex": "^3.0.1",
+    "webpack": "^4.19.1"
+  },
+  "files": [
+    ".nuxt",
+    "node_modules",
+    "package.json"
+  ],
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,scss,json,md}": [
+      "make lint",
+      "git add"
+    ]
+  }
+}

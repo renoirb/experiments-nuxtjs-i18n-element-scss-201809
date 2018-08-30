@@ -1,0 +1,59 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.trimAutoWhitespace": true,
+  // Vuejs Extension Pack for VSCode recommendations
+  // Without the Extension Pack installed.
+  // We do not have the extension installed because it includes Prettier.
+  // Prettier is handled by ESLint.
+  "eslint.enable": true,
+  "window.zoomLevel": 1,
+  "files.trimTrailingWhitespace": true,
+  "editor.insertSpaces": true,
+  // editor.formatOnSave:
+  // only if you want auto-fomattting on save
+  "editor.formatOnSave": false,
+  "editor.detectIndentation": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "all",
+  "[vue]": {
+    "editor.formatOnSave": false
+  },
+  "[scss]": {
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.formatOnSave": true
+  },
+  // ESLint specific
+  // https://eslint.org/docs/developer-guide/nodejs-api#cliengine
+  "eslint.provideLintTask": true,
+  "eslint.packageManager": "yarn",
+  "eslint.run": "onType",
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    }
+  ],
+  "eslint.alwaysShowStatus": true,
+  "vetur.validation.style": true,
+  // Validate vue-html in <template> using eslint-plugin-vue
+  "vetur.validation.template": true
+}

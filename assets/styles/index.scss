@@ -1,0 +1,26 @@
+/**
+ * Plus un élément est global, plus haut il doit être.
+ * Concept: https://itcss.io/
+ *
+ * Regarder ces SCSS:
+ * - https://github.com/zce/dashboard/blob/vue/src/assets/styles/main.scss
+ * - https://github.com/lynzz/element-admin/blob/master/template/
+ *
+ * Soon, CSS Modules (nice-to-have):
+ * - See example, https://github.com/css-modules/css-modules/issues/86#issuecomment-158273243
+ *
+ * NOTE:
+ * Files from this folder can be refered to as with prefix '~/styles/...', but since we are at the root
+ * we can use relative path. Refer to nuxt.config.js line `config.resolve.alias['/styles']`
+ */
+
+@import 'variables'; // Local call, but from a component/page, @import "~/styles/variables";
+
+@import 'modules/global';
+@import 'modules/font';
+
+// Extending patterns within Element UI's
+@import 'modules/element-card';
+
+@import 'element';
+@import '~vue-ionicons/ionicons.scss';

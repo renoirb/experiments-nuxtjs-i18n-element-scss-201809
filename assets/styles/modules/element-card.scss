@@ -1,0 +1,14 @@
+.el-project-theme {
+  .el-card__header {
+    background-color: var(--branding-ice);
+    .card-header {
+      overflow: hidden;
+      .card-header-right {
+        float: right;
+      }
+      .card-header-left {
+        float: left;
+      }
+    }
+  }
+}

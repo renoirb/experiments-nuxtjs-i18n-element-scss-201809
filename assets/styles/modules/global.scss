@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100% !important;
+  margin: 0;
+}
+
+html {
+  // see also type.scss
+  color: $--color-text-primary;
+}
+
+::selection {
+  color: rebeccapurple;
+  background: var(--branding-ice);
+  text-shadow: none;
+}
